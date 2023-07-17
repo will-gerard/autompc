@@ -60,8 +60,11 @@ of new algorithms to the package.
  2. Install [PyTorch](https://pytorch.org/get-started/locally/)
  3. (Optional) For certain benchmarks to work, install OpenAI [gym](https://gym.openai.com/) and [Mujoco](http://www.mujoco.org/)
  4. (Optional) To use DirectTranscriptionController, install IPOPT solver and cyipopt binding. See [instructions](https://cyipopt.readthedocs.io/en/latest/install.html)
+ 4. Run `brew install swig` (required to get pyrfr to build on Mac)
  5. Run `pip install -r requirements.txt`
- 6. Run `pip install -e .`
+ 6. Run `pip install .`
+
+ After this I was able to run the "3_Controllers_and_Tasks.ipynb" notebook and visualize the trajectory at the end.
 
 ## Documentation
 [Python API Reference](https://autompc.readthedocs.io).

@@ -144,7 +144,7 @@ class Koopman(Model):
         
         XU = np.concatenate((X, U), axis = 0) # stack X and U together
         if self.method == "lstsq": # Least Squares Solution
-            AB = np.dot(Y, sla.pinv2(XU))
+            AB = np.dot(Y, sla.pinv(XU))
             A = AB[:n, :n]
             B = AB[:n, n:]
         elif self.method == "lasso":  # Call lasso regression on coefficients
